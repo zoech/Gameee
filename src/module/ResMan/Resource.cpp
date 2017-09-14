@@ -2,8 +2,10 @@
 
 #include"Resource.h"
 
-Resource::Resource(const t_res* pT){
+Resource::Resource(const char* res_id, const t_res* pT){
+	this->id = res_id;
 	this->res_type = pT;
+	this->data_block_num = 0;
 	this->path = NULL;
 	this->data = NULL;
 }

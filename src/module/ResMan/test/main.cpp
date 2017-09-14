@@ -16,7 +16,7 @@ int main(int argc, char** args){
 	int* iData = (int*) i->get_data();
 	
 	printf("the c data is %s\n", cData);
-	for(int x = 0; x < 10; ++x){
+	for(int x = 0; x < i->data_block_num; ++x){
 		printf("the i data at position %i is %i\n", x, iData[x]);
 	}
 }

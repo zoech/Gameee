@@ -27,6 +27,7 @@ void load_tex(Resource* res){
 		return;
 	
 	res->data = sv_load_tex(res->path);
+	res->data_block_num = 1;
 }
 
 void free_tex_data(Resource* res){

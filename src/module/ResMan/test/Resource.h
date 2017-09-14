@@ -17,8 +17,9 @@ typedef struct t_res {
 class Resource {
 public:
 	const t_res*	res_type;
-	char*	path;
-	void*	data;
+	char*			path;
+	void*			data;
+	int				data_block_num;		// indicate how many blocks of data is stored in data pointer
 
 	Resource(const t_res*);
 	~Resource();

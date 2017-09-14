@@ -4,6 +4,9 @@
 #ifndef GAMEEE_RESOURCE_H
 #define GAMEEE_RESOURCE_H
 
+
+#define RESOURCE_MAX_ID_LENGTH 20
+
 class Resource;
 struct t_res;
 typedef struct t_res t_res;
@@ -16,11 +19,13 @@ typedef struct t_res {
 
 class Resource {
 public:
+	const char*		id;
 	const t_res*	res_type;
-	char*	path;
-	void*	data;
+	char*			path;
+	void*			data;
+	int				data_block_num;		// indicate how many blocks of data is stored in data pointer
 
-	Resource(const t_res*);
+	Resource(const char* id, const t_res*);
 	~Resource();
 
 	void	set_res_path(char*);

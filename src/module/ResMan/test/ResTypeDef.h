@@ -30,6 +30,7 @@ void load_text(Resource* res){
 	strcpy(tmp, res->path);
 	
 	res->data = tmp;
+	res->data_block_num = 20;
 }
 
 void free_text_data(Resource* res){
@@ -46,6 +47,7 @@ void load_int(Resource* res){
 	}
 	
 	res->data = tmp;
+	res->data_block_num = 10;
 }
 
 

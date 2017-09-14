@@ -4,6 +4,7 @@
 
 Resource::Resource(const t_res* pT){
 	this->res_type = pT;
+	this->data_block_num = 0;
 	this->path = NULL;
 	this->data = NULL;
 }
