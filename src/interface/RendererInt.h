@@ -14,6 +14,7 @@ typedef	SDL_Rect		EE_Rect;
 #define	EE_WNDSHOWN_CENTER		1
 #define EE_WNDSHOWN_FULLSCREEN	2
 
+
 /*************** window **********************/
 extern EE_Window* EE_CreateWindow(char*	wnd_title,		// window's title
 								  int	w,
